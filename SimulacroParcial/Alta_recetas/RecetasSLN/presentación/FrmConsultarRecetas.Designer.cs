@@ -1,7 +1,7 @@
 ﻿
 namespace RecetasSLN.presentación
 {
-    partial class FrmInsertarReceta
+    partial class FrmConsultarRecetas
     {
         /// <summary>
         /// Required designer variable.
@@ -128,7 +128,6 @@ namespace RecetasSLN.presentación
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-
             // 
             // btnAceptar
             // 
@@ -138,7 +137,6 @@ namespace RecetasSLN.presentación
             this.btnAceptar.TabIndex = 31;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
-
             // 
             // dgvDetalles
             // 
@@ -203,6 +201,7 @@ namespace RecetasSLN.presentación
             // 
             // cboProducto
             // 
+            this.cboProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboProducto.FormattingEnabled = true;
             this.cboProducto.Items.AddRange(new object[] {
             "seleccionar"});
@@ -238,7 +237,7 @@ namespace RecetasSLN.presentación
             this.lblNro.TabIndex = 23;
             this.lblNro.Text = "Receta #: 1";
             // 
-            // FrmInsertarReceta
+            // FrmConsultarRecetas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -257,8 +256,9 @@ namespace RecetasSLN.presentación
             this.Controls.Add(this.txtCheff);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblNro);
-            this.Name = "FrmInsertarReceta";
+            this.Name = "FrmConsultarRecetas";
             this.Text = "Consultar recetas";
+            this.Load += new System.EventHandler(this.FrmInsertarReceta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.ResumeLayout(false);

@@ -11,8 +11,8 @@ namespace RecetasSLN.datos
     internal class AccesoDB
     {
         protected static AccesoDB instancia;
-        protected SqlConnection conexion;
-        protected SqlCommand comando;
+        protected SqlConnection conexion = new SqlConnection(Properties.Resources.conexionString);
+        protected SqlCommand comando = new SqlCommand();
 
         protected AccesoDB()
         {
