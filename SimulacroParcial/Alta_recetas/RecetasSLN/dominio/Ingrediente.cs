@@ -8,11 +8,10 @@ namespace RecetasSLN.dominio
 {
     public class Ingrediente
     {
-        public Ingrediente(int ingredienteID, string nombre, string unidadMedida)
+        public Ingrediente(int ingredienteID, string nombre)
         {
             IngredienteID = ingredienteID;
             Nombre = nombre;
-            UnidadMedida = unidadMedida;
         }
 
         public int IngredienteID { get; set; }

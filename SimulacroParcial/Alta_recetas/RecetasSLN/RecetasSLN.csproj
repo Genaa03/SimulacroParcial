@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="datos\AccesoDB.cs" />
-    <Compile Include="datos\GestorDB.cs" />
-    <Compile Include="datos\IRecetaDAO.cs" />
-    <Compile Include="datos\RecetaDAO.cs" />
-    <Compile Include="datos\Parametro.cs" />
+    <Compile Include="datos\HelperDAO.cs" />
+    <Compile Include="datos\Implementaciones\GestorDAO.cs" />
+    <Compile Include="datos\Implementaciones\RecetaDAO.cs" />
+    <Compile Include="datos\Interfaces\IGestorDAO.cs" />
+    <Compile Include="datos\Interfaces\IRecetaDAO.cs" />
     <Compile Include="dominio\DetalleReceta.cs" />
     <Compile Include="dominio\Ingrediente.cs" />
     <Compile Include="dominio\Receta.cs" />

@@ -1,19 +1,19 @@
-﻿using System;
+﻿using RecetasSLN.dominio;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using RecetasSLN.dominio;
 
-namespace RecetasSLN.datos
+namespace RecetasSLN.datos.Interfaces
 {
-    internal interface IRecetaDAO
+    internal interface IGestorDAO
     {
         DataTable cargarIngredientes();
 
         int siguienteReceta();
 
-        bool ejecutarSP(Receta oReceta);
+        bool insertarMaestroDetalle(Receta oReceta);
     }
 }

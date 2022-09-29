@@ -20,12 +20,12 @@ namespace RecetasSLN.dominio
             DetalleRecetas = new List<DetalleReceta>();
         }
 
-        public void AgregarReceta(DetalleReceta detalle)
+        public void AgregarDetalle(DetalleReceta detalle)
         {
             DetalleRecetas.Add(detalle);
         }
 
-        public void Eliminar(int indice)
+        public void EliminarDetalle(int indice)
         {
             DetalleRecetas.RemoveAt(indice);
         }

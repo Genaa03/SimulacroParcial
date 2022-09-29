@@ -61,11 +61,29 @@ namespace RecetasSLN.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Data Source=localhost;Initial Catalog=recetas_db2;Integrated Security=True.
+        /// </summary>
+        internal static string conexion2 {
+            get {
+                return ResourceManager.GetString("conexion2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Data Source=localhost;Initial Catalog=recetas_db;Integrated Security=True.
         /// </summary>
-        internal static string conexionString {
+        internal static string conexionStringLocal {
             get {
-                return ResourceManager.GetString("conexionString", resourceCulture);
+                return ResourceManager.GetString("conexionStringLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        internal static string conexionStringTUP {
+            get {
+                return ResourceManager.GetString("conexionStringTUP", resourceCulture);
             }
         }
     }
