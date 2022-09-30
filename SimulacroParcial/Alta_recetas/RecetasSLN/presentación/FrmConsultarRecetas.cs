@@ -89,6 +89,7 @@ namespace RecetasSLN.presentación
             dgvDetalles.Rows.Clear();
             cantidadIngredientes();
             proximaReceta();
+            receta.DetalleRecetas.Clear();
 
         }
 
@@ -141,6 +142,24 @@ namespace RecetasSLN.presentación
                     MessageBox.Show("No se pudo insertar la receta.", "ERROR",
                 MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
+            }
+        }
+
+        private void dgvDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 3) 
+            {
+                DetalleReceta d = null;
+                foreach(DetalleReceta detalle in receta.DetalleRecetas)
+                {
+                    if (dgvDetalles.Rows[e.RowIndex].Cells[1].Value.ToString() == detalle.oIngrediente.Nombre)
+                    {
+                        d = detalle;
+                    }
+                }
+                dgvDetalles.Rows.RemoveAt(e.RowIndex);
+                receta.DetalleRecetas.Remove(d);
+
             }
         }
     }

@@ -156,6 +156,7 @@ namespace RecetasSLN.presentación
             this.dgvDetalles.RowHeadersWidth = 51;
             this.dgvDetalles.Size = new System.Drawing.Size(471, 140);
             this.dgvDetalles.TabIndex = 30;
+            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
             // detalle
             // 
