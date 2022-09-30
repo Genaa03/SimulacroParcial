@@ -120,7 +120,7 @@ namespace RecetasSLN.dominio
                     comando.ExecuteNonQuery();
                     comando.Parameters.Clear();
                 }
-
+                receta.DetalleRecetas.Clear();
                 t.Commit();
 
             }

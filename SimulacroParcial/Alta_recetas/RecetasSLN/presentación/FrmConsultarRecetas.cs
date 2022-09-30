@@ -104,6 +104,7 @@ namespace RecetasSLN.presentación
                     receta.AgregarDetalle(det);
                     dgvDetalles.Rows.Add(new object[] { det.oIngrediente.IngredienteID, det.oIngrediente.Nombre, det.Cantidad });
                     cantidadIngredientes();
+                    nudCantidad.Value = 1;
                 }
             }
         }
