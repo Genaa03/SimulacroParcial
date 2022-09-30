@@ -159,7 +159,7 @@ namespace RecetasSLN.presentación
                 }
                 dgvDetalles.Rows.RemoveAt(e.RowIndex);
                 receta.DetalleRecetas.Remove(d);
-
+                cantidadIngredientes();
             }
         }
     }
